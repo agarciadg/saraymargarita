@@ -12,7 +12,7 @@
     <meta property="og:type" content="website">
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Creepster&family=Dancing+Script:wght@700&family=Fredoka:wght@400;600&family=Oswald:wght@500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Creepster&family=Great+Vibes&family=Quicksand:wght@500;700&family=Special+Elite&display=swap');
 
         * { box-sizing: border-box; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 
@@ -27,8 +27,8 @@
             --boton-bg: #FFD200;
             --boton-texto: #000000;
             --boton-borde: #000000;
-            --fuente-titulo: 'Architects Daughter', cursive;
-            --fuente-texto: 'Architects Daughter', cursive;
+            --fuente-titulo: 'Cinzel Decorative', serif;
+            --fuente-texto: 'Quicksand', sans-serif;
         }
         body[data-tema="margarita"] {
             --fondo: #0b0614;
@@ -41,7 +41,7 @@
             --boton-texto: #ffffff;
             --boton-borde: #f5f0e8;
             --fuente-titulo: 'Creepster', cursive;
-            --fuente-texto: 'Oswald', sans-serif;
+            --fuente-texto: 'Special Elite', monospace;
         }
         body[data-tema="sara"] {
             --fondo: #ffe9f8;
@@ -53,8 +53,8 @@
             --boton-bg: linear-gradient(135deg, #ff9ad5, #c9a7ff);
             --boton-texto: #ffffff;
             --boton-borde: #ffffff;
-            --fuente-titulo: 'Dancing Script', cursive;
-            --fuente-texto: 'Fredoka', sans-serif;
+            --fuente-titulo: 'Great Vibes', cursive;
+            --fuente-texto: 'Quicksand', sans-serif;
         }
 
         body, html {
@@ -86,7 +86,8 @@
             font-size: 1.6rem; margin: 8px 0; text-transform: uppercase; letter-spacing: 1px;
         }
         body[data-tema="margarita"] h1 { color: #e01e2b; font-size: 2.1rem; text-shadow: 0 0 10px rgba(224,30,43,0.7); letter-spacing: 2px; }
-        body[data-tema="sara"] h1 { text-transform: none; font-size: 2.3rem; color: #b45fd6; text-shadow: 0 0 12px #fff; }
+        body[data-tema="sara"] h1 { text-transform: none; font-size: 3rem; font-weight: 400; letter-spacing: 0; color: #b45fd6; text-shadow: 0 0 12px #fff, 0 0 2px #fff; line-height: 1.1; }
+        body[data-tema="margarita"] .pantalla-mensaje p { letter-spacing: 0.5px; }
 
         .info-detalle {
             font-size: 1.1rem; border: 2px dashed var(--panel-borde); padding: 12px; width: 100%; margin: 10px 0;
@@ -109,7 +110,7 @@
             box-shadow: 4px 4px 0px #000;
         }
         body[data-tema="margarita"] .boton { box-shadow: 0 0 14px rgba(193,18,31,0.8); }
-        body[data-tema="sara"] .boton { border-radius: 999px; box-shadow: 0 4px 16px rgba(201,167,255,0.8); text-transform: none; font-size: 1.2rem; }
+        body[data-tema="sara"] .boton { border-radius: 999px; box-shadow: 0 4px 16px rgba(201,167,255,0.8); text-transform: none; font-size: 1.2rem; letter-spacing: 0.5px; }
         .boton.secundario { background: transparent; color: var(--texto); border-color: var(--texto); font-size: 0.9rem; padding: 8px 18px; box-shadow: none; }
 
         .separador { width: 100%; height: 14px; margin: 8px 0; }
@@ -174,8 +175,8 @@
 
         <!-- 1. Elegir personaje -->
         <div id="pantalla-seleccion">
-            <h1>¡Hola!</h1>
-            <p>¿Quieres jugar?.<br>Elige a tu personaje:</p>
+            <h1>¡Hola Gabi!</h1>
+            <p>Te tenemos una invitación.<br>Elige con quién quieres jugar:</p>
             <div class="tarjetas">
                 <button class="tarjeta margarita" onclick="elegirPersonaje('margarita')">
                     <img src="personaje1.png" alt="Margarita" onerror="this.style.visibility='hidden'">
